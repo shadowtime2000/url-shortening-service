@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-import { Typography, TextField, Button } from '@material-ui/core'
+import { Typography, Input, Button, Grid, InputLabel } from '@material-ui/core'
 
 export default function App() {
 
@@ -15,16 +15,29 @@ export default function App() {
     }
 
     return (
-        <div className="app">
-            <Typography color="primary" align="center" variant="h1" component="h4">
-                URL Shortening Service
-            </Typography>
-            <Typography color="secondary" align="center" variant="h4" component="h6">
-                Shorten a URL!
-            </Typography>
-            <TextField fullWidth type="url" variant="filled" onChange={(e) => setUrlToShorten(e.target.value)} />
-            <div>{id}</div>
-            <Button variant="contained" onClick={shortenLink} color="primary" align="center" >Shorten URL!</Button>
-        </div>
+        <Grid container spacing={3} className="app">
+            <Grid item xs={12}>
+                <Typography color="primary" align="center" variant="h1" component="h4">
+                    URL Shortening Service
+                </Typography>
+            </Grid>
+            <Grid item xs={12}>
+                <Typography color="secondary" align="center" variant="h4" component="h6">
+                    Shorten a URL!
+                </Typography>
+            </Grid>
+            <Grid item xs={12}></Grid>
+            <Grid item xs={12}>
+                <InputLabel>URL to shorten</InputLabel><Input fullWidth value={urlToShorten} type="url" color="primary" onChange={(e) => setUrlToShorten(e.target.value)} />
+            </Grid>
+            <Grid item xs={12}>
+                <Typography style={{ fontSize: "50px" }} align="center">
+                    {id}
+                </Typography>
+            </Grid>
+            <Grid item xs={12}>
+                <Button fullWidth variant="contained" onClick={shortenLink} color="primary">Shorten URL!</Button>
+            </Grid>
+        </Grid>
     )
 }
