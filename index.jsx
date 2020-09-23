@@ -32,7 +32,7 @@ export default function App() {
             </Grid>
             <Grid item xs={12}>
                 <Typography style={{ fontSize: "50px" }} align="center">
-                    Your shortened ID is <a href={`/u/${id}`}>{id}</a>
+                    Your shortened ID is <a href={`/u/${id}`} target="_blank">{id}</a>
                 </Typography>
             </Grid>
             <Grid item xs={12}>
