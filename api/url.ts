@@ -1,4 +1,4 @@
-const endb = require("../_endb")
+import endb from '../_endb'
 
 module.exports = async (req, res) => {
     if ( await endb.has(req.query.id)) {

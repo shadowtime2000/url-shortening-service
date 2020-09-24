@@ -1,4 +1,4 @@
-const endb = require("../_endb")
+import endb from '../_endb'
 
 module.exports = async (req, res) => {
     let code = Math.random().toString(36).slice(2)
