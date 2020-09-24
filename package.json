@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "zero"
+    "start": "zero",
+    "prettier": "prettier --no-config --write ."
   },
   "keywords": [],
   "author": "",
@@ -38,5 +39,7 @@
   "alias": {
     "react-dom": "@hot-loader/react-dom"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  }
 }

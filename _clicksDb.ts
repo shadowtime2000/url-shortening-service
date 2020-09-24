@@ -1,4 +1,4 @@
-import Endb from 'endb'
+import Endb from "endb";
 
 const endb = new Endb("sqlite://clicksDb.sqlite");
 
