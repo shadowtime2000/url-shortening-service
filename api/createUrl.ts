@@ -1,4 +1,4 @@
-import endb from '../_endb'
+import endb from '../_urlDb'
 
 export =  async (req, res) => {
     let code = Math.random().toString(36).slice(2)

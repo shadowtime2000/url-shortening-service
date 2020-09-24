@@ -1,4 +1,4 @@
-import endb from '../_endb'
+import endb from '../_urlDb'
 
 export = async (req, res) => {
     if ( await endb.has(req.query.id)) {
