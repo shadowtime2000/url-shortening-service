@@ -3,7 +3,7 @@ import clicksDb from "../_clicksDb";
 export = async (req, res) => {
   await clicksDb.set(
     req.params.id,
-    (await clicksDb.get(req.params.id)) + 1 || 1
+    `${parseInt(await clicksDb.get(req.params.id)) + 1}`
   );
   console.log(`${req.params.id} clicked`);
   fetch(`/api/url?id=${req.params.id}`)
