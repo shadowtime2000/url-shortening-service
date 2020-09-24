@@ -1,3 +1,4 @@
 node_modules
 .zero
 urlDb.sqlite
+clicksDb.sqlite

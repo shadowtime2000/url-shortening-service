@@ -1,6 +1,8 @@
 _urlDb.ts
+_clicksDb.ts
 package.json
 README.md
 yarn-error.log
 yarn.lock
 urlDb.sqlite
+clicksDb.sqlite
