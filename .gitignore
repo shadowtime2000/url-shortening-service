@@ -1,3 +1,3 @@
 node_modules
 .zero
-db.sqlite
+urlDb.sqlite

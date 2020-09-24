@@ -1,5 +1,5 @@
 import Endb from 'endb'
 
-const endb = new Endb("sqlite://db.sqlite");
+const endb = new Endb("sqlite://urlDb.sqlite");
 
 export default endb;
